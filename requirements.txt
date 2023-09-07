@@ -1,0 +1,8 @@
+pypdfium2==4.19.0
+streamlit==1.26.0
+langchain==0.0.279
+pypdfium2==4.19.0
+python-dotenv==1.0.0
+pandas==2.0.3
+pytesseract==0.3.10
+openai==0.28.0
