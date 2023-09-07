@@ -1,8 +1,8 @@
 # 📄 Document Parser for Reciepts and Invoices
 
-This code is for a document parser app that can read data from PDF files of recipets or invoices and extracts specific details from them, e.g., invoice date, invoice amount.
+This code repository is for **a document parser app** that can read data from PDF files of recipets or invoices and extract specific details from them, e.g., invoice date, invoice amount.
 
-By default it will extract the following items (if available):
+By default, it will extract the following items (if available):
 * **DATE**: The date when the invoice was issued,
 * **ITEM**: The purchased item listed in the invoice,
 * **AMOUNT**: The invoice amount, and
@@ -28,7 +28,7 @@ Once all dependencies are installed, you can launch the app using the following 
 
 `streamlit run src/app.py`
 
-In a few seconds this will lanuch the app in your browser. If that doesn't happen, you can copy the URL that's printed on the console.
+In a few seconds the app will be lanuched in your browser. If that doesn't happen automatically, you can copy the URL that's printed in the output.
 
 </details>
 
@@ -36,9 +36,9 @@ In a few seconds this will lanuch the app in your browser. If that doesn't happe
 
 <details><summary><b>Show config settings</b></summary>
 
-This app makes a call to OpenAI API. You will need to get the API key from [OpenAI] and store it locally in the `.env` file.
+This app makes a call to the OpenAI API. You will need to get the API key from [OpenAI] and store it locally in the `.env` file.
 
-In addition, you will also need an API key from [HuggingFace], and that key should also be stored in the same file.
+In addition, you will also need an API key from [HuggingFace], and that key should also be stored in the same file. See below:
 
 <p align='center'>
 	<img src='./img/api-keys.png', alt='API Keys', width='650'>
@@ -77,15 +77,19 @@ You can download the results as CSV file by clicking on the **Click to Download*
 
 ## ⚙️How It Works
 
-Each uploaded PDF document first gets converted into an image (by using `pypdfium2`). This is because it's easier to extract text from images rather than from PDF documents. Then from the image, each line of raw (and messy!) text is extracted (by using `pytesseract`). This raw text is then sent to OpenAI API with the following prompt:
+Each uploaded PDF document first gets converted into an image (by using `pypdfium2`). This is because it's easier to extract text from images rather than from PDF documents.
+
+Then from these images, each line of raw (and messy!) text is extracted (by using `pytesseract`).
+
+This raw text is then sent to GPT-3.5 via the OpenAI API with the following prompt:
 
 <p align='center'>
 	<img src='./img/prompt-template.png' alt='Prompt Template', width='650'>
 </p>
 
-Where `content` is all the extracted text and `data_elements` are the default paramteres discussed above.
+Where `content` is all the extracted text and `data_elements` are the default parameters discussed above.
 
-The OpenAI API parses through the text and extracts the requested data elements (as long as they are available). The JSON results are then converted into a pandas dataframe and displayed on the app UI.
+The GPT-3.5 model parses through the text and extracts the requested data elements (as long as they are available). The JSON results are then converted into a pandas dataframe and displayed on the app UI.
 
 Please note that the app uses **gpt-3.5-turbo-0613** from OpenAI.
 
@@ -101,4 +105,4 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 ### ❤️Credit
 
 My **hearfelt thanks** to this wonderful video tutorial by [AIJason].
-[AI Jason]: https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk
+[AIJason]: https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk
