@@ -104,5 +104,4 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 
 ### ❤️Credit
 
-My **hearfelt thanks** to this wonderful video tutorial by [AIJason].
-[AIJason]: https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk
+My **hearfelt thanks** to this wonderful video tutorial by [AIJason](https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk).
