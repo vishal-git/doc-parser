@@ -38,14 +38,11 @@ In a few seconds the app will be lanuched in your browser. If that doesn't happe
 
 This app makes a call to the OpenAI API. You will need to get the API key from [OpenAI] and store it locally in the `.env` file.
 
-In addition, you will also need an API key from [HuggingFace], and that key should also be stored in the same file. See below:
-
 <p align='center'>
-	<img src='./img/api-keys.png', alt='API Keys', width='650'>
+	<img src='./img/api-key.png', alt='API Keys', width='650'>
 </p>
 
 [OpenAI]:      https://openai.com
-[HuggingFace]: https://huggingface.co
 </details>
 
 ## 🤔How to Use the App
@@ -104,4 +101,8 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 
 ### ❤️Credit
 
-My **hearfelt thanks** to this wonderful video tutorial by [AIJason](https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk).
+* [LLM Chain Documentation](https://python.langchain.com/docs/modules/chains/foundational/llm_chain)
+* [`pypdfium2` Introduction](https://pypdfium2.readthedocs.io/en/stable/readme.html#usage)
+* [`pytesseract`s PyPI page](https://pypi.org/project/pytesseract/)
+
+And finally, my **hearfelt thanks** to this wonderful video tutorial by [AIJason](https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk).
