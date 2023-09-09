@@ -2,6 +2,8 @@
 
 This code repository is for **a document parser app** that can read data from PDF files of receipts or invoices and extract specific details from them, e.g., invoice date, invoice amount.
 
+<details><summary><b>Show more details</b></summary>
+
 By default, it will extract the following items (if available):
 * **DATE**: The date when the invoice was issued,
 * **ITEM**: The purchased item listed in the invoice,
@@ -9,6 +11,7 @@ By default, it will extract the following items (if available):
 * **VENDOR**: The name of the company that issued the invoice.
 
 You can easily change these parameters either directly on the web app (before uploading documents) or in the source code.
+</details>
 
 ## 🚀 Instructions to Launch the App
 
@@ -106,8 +109,10 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 
 ### ❤️Credit
 
+<details><summary><b>Show credits</b></summary>
 * [LLM Chain Documentation](https://python.langchain.com/docs/modules/chains/foundational/llm_chain)
 * [`pypdfium2` Introduction](https://pypdfium2.readthedocs.io/en/stable/readme.html#usage)
 * [`pytesseract`s PyPI page](https://pypi.org/project/pytesseract/)
 
 And finally, my **hearfelt thanks** to this wonderful video tutorial by [AIJason](https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk).
+</details>
