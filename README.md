@@ -1,6 +1,6 @@
-# 📄 Document Parser for Reciepts and Invoices
+# 📄 Document Parser for Receipts and Invoices
 
-This code repository is for **a document parser app** that can read data from PDF files of recipets or invoices and extract specific details from them, e.g., invoice date, invoice amount.
+This code repository is for **a document parser app** that can read data from PDF files of receipts or invoices and extract specific details from them, e.g., invoice date, invoice amount.
 
 By default, it will extract the following items (if available):
 * **DATE**: The date when the invoice was issued,
@@ -32,7 +32,7 @@ In a few seconds the app will be lanuched in your browser. If that doesn't happe
 
 </details>
 
-## 🔑Config
+## 🔑Secrets
 
 <details><summary><b>Show config settings</b></summary>
 
@@ -63,7 +63,7 @@ You can then upload PDF documents by either clicking on the **Browse files** but
 	<img src='./img/upload-docs.png' alt='Upload Documents', width='650'>
 </p>
 
-Once the files are uploaded, you will get results in a few minutes. Here's a sample result from three reciepts:
+Once the files are uploaded, you will get results in a few minutes. Here's a sample result from three receipts:
 
 <p align='center'>
 	<img src='./img/sample-result.png' alt='Sample Results', width='650'>
@@ -73,6 +73,8 @@ You can download the results as CSV file by clicking on the **Click to Download*
 </details>
 
 ## ⚙️How It Works
+
+<details><summary><b>Show details</b></summary>
 
 Each uploaded PDF document first gets converted into an image (by using `pypdfium2`). This is because it's easier to extract text from images rather than from PDF documents.
 
@@ -89,15 +91,18 @@ Where `content` is all the extracted text and `data_elements` are the default pa
 The GPT-3.5 model parses through the text and extracts the requested data elements (as long as they are available). The JSON results are then converted into a pandas dataframe and displayed on the app UI.
 
 Please note that the app uses **gpt-3.5-turbo-0613** from OpenAI.
+</details>
 
 ## 💡Potential Improvements
+
+<details><summary><b>Show details</b></summary>
 
 Of course, this app is far from perfect. Here are some improvements that can enhance the functionality to utility of this app:
 
 1. Format all dates and dollar amounts so that they are consistent. 
 2. Enable the user to make changes to the results that are displayed on the UI before exporting. Currently, the user _can_ make changes to the results but they are not persisted to the exported dataset.
 3. Include some error handling. Currently, there are no proper safeguards against invalid files or when the requested elements are not found in the uploaded files.
-
+</details>
 
 ### ❤️Credit
 
