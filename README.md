@@ -110,9 +110,12 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 ### ❤️Credit
 
 <details><summary><b>Show credits</b></summary>
-* [LLM Chain Documentation](https://python.langchain.com/docs/modules/chains/foundational/llm_chain)
-* [`pypdfium2` Introduction](https://pypdfium2.readthedocs.io/en/stable/readme.html#usage)
-* [`pytesseract`s PyPI page](https://pypi.org/project/pytesseract/)
+
+[LLM Chain Documentation](https://python.langchain.com/docs/modules/chains/foundational/llm_chain)
+
+[`pypdfium2` Introduction](https://pypdfium2.readthedocs.io/en/stable/readme.html#usage)
+
+[`pytesseract`s PyPI page](https://pypi.org/project/pytesseract/)
 
 And finally, my **hearfelt thanks** to this wonderful video tutorial by [AIJason](https://youtu.be/v_cfORExneQ?si=A04p7JzF2v9cDaKk).
 </details>
