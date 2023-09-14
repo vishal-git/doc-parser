@@ -13,7 +13,7 @@ By default, it will extract the following items (if available):
 You can easily change these parameters either directly on the web app (before uploading documents) or in the source code.
 </details>
 
-## 🚀 Instructions to Launch the App
+## Instructions to Launch the App 🚀
 
 <details><summary><b>Show instructions</b></summary>
 
@@ -35,7 +35,7 @@ In a few seconds the app will be lanuched in your browser. If that doesn't happe
 
 </details>
 
-## 🔑Secrets
+## Secrets 🔑
 
 <details><summary><b>Show config settings</b></summary>
 
@@ -48,7 +48,7 @@ This app makes a call to the OpenAI API. You will need to get the API key from [
 [OpenAI]:      https://openai.com
 </details>
 
-## 🤔How to Use the App
+## How to Use the App 🤔
 
 <details><summary><b>Show instructions</b></summary>
 
@@ -75,7 +75,7 @@ Once the files are uploaded, you will get results in a few minutes. Here's a sam
 You can download the results as CSV file by clicking on the **Click to Download** button.
 </details>
 
-## ⚙️How It Works
+## How It Works ⚙️
 
 <details><summary><b>Show details</b></summary>
 
@@ -96,7 +96,7 @@ The GPT-3.5 model parses through the text and extracts the requested data elemen
 Please note that the app uses **gpt-3.5-turbo-0613** from OpenAI.
 </details>
 
-## 💡Potential Improvements
+## Potential Improvements 💡
 
 <details><summary><b>Show details</b></summary>
 
@@ -107,7 +107,7 @@ Of course, this app is far from perfect. Here are some improvements that can enh
 3. Include some error handling. Currently, there are no proper safeguards against invalid files or when the requested elements are not found in the uploaded files.
 </details>
 
-### ❤️Credit
+### Sources 🔎 
 
 <details><summary><b>Show credits</b></summary>
 
