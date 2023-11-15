@@ -100,7 +100,7 @@ Please note that the app uses **gpt-3.5-turbo-0613** from OpenAI.
 
 <details><summary><b>Show details</b></summary>
 
-Of course, this app is far from perfect. Here are some improvements that can enhance the functionality to utility of this app:
+Of course, this app is far from perfect. Here are some improvements that can enhance the functionality/utility of this app:
 
 1. Format all dates and dollar amounts so that they are consistent. 
 2. Enable the user to make changes to the results that are displayed on the UI before exporting. Currently, the user _can_ make changes to the results but they are not persisted to the exported dataset.
